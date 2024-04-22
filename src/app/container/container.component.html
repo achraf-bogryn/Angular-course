@@ -8,27 +8,29 @@
 to use the property that we was created inside the class -->
 <!-- <img src={{Product.PImage}}> -->
 <!-- Property binding -->
-<app-search></app-search>
 <div class="ekart--product--container">
-
+    <app-search></app-search>
+    <product-list></product-list>
+    <!-- <div class="ekart--product--container"> -->
+    <!-- 
     <img [src]="Product.PImage">
     <p> Name : {{Product.name}}</p>
     <p>Price : {{'$'+Product.price}}</p>
     <p>color : {{Product.color}}</p>
-    <p>Disconted : {{Product.Disconted+'%'}}</p>
-    <p>Disconted Price : {{'$'+getDiscountPrice().toFixed(2)}}</p>
+    <p>Disconted : {{Product.Disconted+'%'}}</p> -->
+    <!-- <p>Disconted Price : {{'$'+getDiscountPrice().toFixed(2)}}</p> -->
     <!-- <p>Prcie discount : {{Product.price - Product.price*Product.Disconted/100}}</p> -->
-    <p>{{Product.instock > 0 ? 'Only '+ Product.instock + ' items left': 'Not in stock'}}</p>
+    <!-- <p>{{Product.instock > 0 ? 'Only '+ Product.instock + ' items left': 'Not in stock'}}</p> -->
     <!-- WE can use bind-disabled =[disabled] to make data dynamic for use property 
 binding -->
     <!-- <button bind-disabled="!(Product.instock > 0)">By Now</button> -->
-    <button [disabled]="!(Product.instock > 0)">By Now</button>
+    <!-- <button [disabled]="!(Product.instock > 0)">By Now</button>
     <input (input)="onNameChange($event)"><br>
     <p>name = {{name}}</p>
     <button (click)="decrementCartValue()">-</button>
     <span>{{AddToCart}}</span>
     <button (click)="incrementClickValue()">+</button><br>
-    <button [disabled]="!(Product.instock > 0)">By Now</button>
+    <button [disabled]="!(Product.instock > 0)">By Now</button> -->
     <!-- <input type="text" [value]="Product.instock"> -->
     <!-- <app-search></app-search> -->
     <!-- <div *ngFor="let item of listOfString">

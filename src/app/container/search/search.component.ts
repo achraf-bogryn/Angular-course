@@ -6,7 +6,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./search.component.css']
 })
 export class SearchComponent {
-  searchText : string ="Mens wear";
+  searchText : string ="";
   // we use this methode for One way data binding 
   // updateSerachtext(event : any){
   //  this.searchText=event.target.value;
