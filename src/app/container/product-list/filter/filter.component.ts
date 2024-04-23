@@ -12,10 +12,10 @@ All : number = 0;
 inStock : number = 0;
 @Input()
 outStock : number = 0; 
-@Output() 
-selectFilterRadioButtonChanged: EventEmitter<String> = new EventEmitter<String>()  ;
+@Output()
+selectFilterRadioButtonChanged: EventEmitter<string> = new EventEmitter<string>()  ;
 
-selectFilterRadioButton : String = 'all';
+selectFilterRadioButton : string = 'all';
 onSelectedFilterRadioButtonChange(){
 // console.log("selectFilterRadioButtonChanged is event ");
 this.selectFilterRadioButtonChanged.emit(this.selectFilterRadioButton);

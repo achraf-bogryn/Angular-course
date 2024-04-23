@@ -9,8 +9,8 @@ to use the property that we was created inside the class -->
 <!-- <img src={{Product.PImage}}> -->
 <!-- Property binding -->
 <div class="ekart--product--container">
-    <app-search></app-search>
-    <product-list></product-list>
+    <app-search (searchTextChange)="setSearchTextContent($event)"></app-search>
+    <product-list [searchText]="searchText"></product-list>
     <!-- <div class="ekart--product--container"> -->
     <!-- 
     <img [src]="Product.PImage">

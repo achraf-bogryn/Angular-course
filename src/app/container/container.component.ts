@@ -42,4 +42,9 @@ export class ContainerComponent {
 // }
 // }
 // listOfString : string[] = ['achraf','soukaina','hamza','baha','ajch'];
+
+searchText : string = '';
+setSearchTextContent(value : string){
+this.searchText = value;
+}
 }
