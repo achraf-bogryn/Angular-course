@@ -20,7 +20,7 @@
 <!-- import data from array products json file -->
 
 
-
+<!-- 
 <div class="ekart--product--container">
     <div class="ekart--product--item" *ngFor=" let prod of products, let i =index ">
         <div class="ekart-wishlist-sale-container">
@@ -44,4 +44,9 @@
         </div>
 
     </div>
+</div> -->
+<app-filter [All]="AllProduct" [inStock]="totalProductInStock" [outStock]="totalProducOutStpck">
+</app-filter>
+<div class="ekart--product--container">
+    <product *ngFor="let prod of products" [product]="prod"></product>
 </div>
