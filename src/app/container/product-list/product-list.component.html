@@ -49,6 +49,7 @@
 </app-filter>
 <div class="ekart--product--container">
     <div *ngFor="let prod of products">
-        <product [product]="prod" *ngIf="selectFilterRadioButton==='all'|| prod.is_in_inventory.toString()===selectFilterRadioButton"></product>
+        <!-- <product [product]="prod" *ngIf="selectFilterRadioButton==='all'|| prod.is_in_inventory.toString()===selectFilterRadioButton"></product> -->
+        <product [product]="prod" *ngIf=" searchText ==='' ||prod.name.toLowerCase().includes(searchText)"></product>
     </div>
 </div>
