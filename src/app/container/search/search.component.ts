@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, EventEmitter, Output } from '@angular/core';
 
 @Component({
   selector: 'app-search',
@@ -7,8 +7,13 @@ import { Component } from '@angular/core';
 })
 export class SearchComponent {
   searchText : string ="";
-  // we use this methode for One way data binding 
+@Output()
+  searchTextChange : EventEmitter<string> = new EventEmitter<string>();
 
+  onsearchTextChange(){
+  this.searchTextChange.emit(this.searchText);
+  }
+   // we use this methode for One way data binding 
   updateSerachtext(event : any){
    this.searchText=event.target.value;
   }
