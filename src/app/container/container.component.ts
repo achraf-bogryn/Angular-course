@@ -42,4 +42,9 @@ export class ContainerComponent {
 // }
 // }
 // listOfString : string[] = ['achraf','soukaina','hamza','baha','ajch'];
+serahcText: string = '';
+
+setSearchText(value : string){
+this.serahcText = value;
+}
 }
