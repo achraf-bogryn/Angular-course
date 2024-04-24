@@ -13,7 +13,7 @@ inStock : number = 0;
 @Input()
 outStock : number = 0; 
 @Output() 
-selectFilterRadioButtonChanged: EventEmitter<string> = new EventEmitter<string>()  ;
+selectFilterRadioButtonChanged: EventEmitter<String> = new EventEmitter<String>()  ;
 
 selectFilterRadioButton : string = 'all';
 onSelectedFilterRadioButtonChange(){
